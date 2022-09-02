@@ -1,3 +1,16 @@
 <div>
-<h3>Counter is {{ counter }}</h3>
+  <h3>Counter is {{ counter }}</h3>
+
+  <div>
+    <input
+      type="text"
+      placeholder="Enter a value"
+      class="form-control"
+      [(ngModel)]="value"
+    />
+
+    <button class="btn btn-primary" (click)="addToCounter()">
+      Add to counter
+    </button>
+  </div>
 </div>
